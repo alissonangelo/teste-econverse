@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>CentralFoods®</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="icon" href="img/icons/tab_logo.png">
+        <script src="js/jquery-1.9.1.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="info_holder">
+                <div id="info_header" class="center">
+                    <div class="info">
+                        <div class="info_icon center">
+                            <img src="img/icons/lock.png" alt="cadeado" >
+                            <p>COMPRA <b>100% SEGURA</b></p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="info_icon center">
+                            <img src="img/icons/001-percentage.png" alt="porcentagem" >
+                            <p><b>5% OFF</b> NO CARTÃO DE CRÉDITO</p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="info_icon center">
+                            <img src="img/icons/truck.png" alt="caminhão" >
+                            <p>ENTREGA EM<b> 24 HORAS*</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="search" class="center">
+                <div id="logo">
+                    <img src="img/icons/logo.png" alt="logo">
+                </div>
+                <div id="search_bar">
+                    <input type="text" placeholder="O QUE VOCÊ ESTÁ BUSCANDO?">
+                    <div id="search_img">
+                        <img src="img/icons/search.png" alt="Buscar">
+                    </div>
+                </div>
+                <div id="shopping_list">
+                    <div id="shopping_list_img">
+                        <img src="img/icons/list.png" alt="Lista de compras">
+                    </div>
+                    <div id="shopping_list_txt">
+                        LISTA DE COMPRAS
+                    </div>
+                </div>
+                <div id="user_info">
+                    <div id="user_img">
+                        <img src="img/icons/user.png" alt="Usuario">
+                    </div>
+                    <div id="user_text">
+                        <p><b>OLÁ, VISITANTE</b></p>
+                        <p>Minha Conta</p>
+                    </div>
+                    <div id="user_more_info">
+                        <img src="img/icons/arrow_down.png" alt="Seta">
+                    </div>
+                </div>
+                <div id="shopping_cart">
+                    <img src="img/icons/cart.png" alt="Carrinho de compras" >
+                </div>
+            </div>
+            <nav id="menu"> 
+                <ul class="center">
+                    <li>BEBIDAS</li>
+                    <li>SOBREMESAS</li>
+                    <li>CARNES</li>
+                    <li>CONGELADOS</li>
+                    <li>CONSERVAS</li>
+                    <li>TEMPEROS</li>
+                    <li>APERITIVOS</li>
+                    <li>ORGÂNICO</li>
+                    <li>OFERTAS</li>
+                </ul>
+            </nav>
+        </header>
+        <div id="slider" class="center">
+            <ul class="slide">
+                <li class="slider_count">
+                    <div class="slider_txt">
+                        <p>PREÇO SE DISCUTE</p>
+                        <p><b>QUALIDADE NÃO!</b></p>
+                        <p><i>MAIS DE 600 PRODUTOS</i></p>
+                    </div>
+                    <div class="slider_btn">
+                        <div class="btn center">
+                            CONFIRA
+                        </div>
+                    </div>
+                    <img src="img/slider/slider1.png" alt="slider">
+                </li>
+                <li class="slider_count">
+                    <div class="slider_txt">
+                        <p>MAIOR VARIEDADE</p>
+                        <p>DO MERCADO</p>
+                    </div>
+                    <div class="slider_btn">
+                        <div class="btn center">
+                            CONFIRA
+                        </div>
+                    </div>
+                    <img src="img/slider/slider2.jpg" alt="slider">
+                </li>
+                <li class="slider_count">
+                    <div class="slider_txt">
+                        <p>PRODUTOS</p>
+                        <p><b>NATURAIS E</b></p>
+                        <p><b>ORGÂNICOS</b></p>
+                    </div>
+                    <div class="slider_btn">
+                        <div class="btn center">
+                            SAIBA MAIS
+                        </div>
+                    </div>
+                    <img src="img/slider/slider3.jpg" alt="slider">
+                </li>
+                <li class="slider_count">
+                    <div class="slider_txt">
+                        <p>MELHOR</p>
+                        <p><b>QUALIDADE</b></p>
+                    </div>
+                    <div class="slider_btn">
+                        <div class="btn center">
+                            CONFIRA
+                        </div>
+                    </div>
+                    <img src="img/slider/slider4.jpg" alt="slider">
+                </li>
+                <li class="slider_count">
+                    <div class="slider_txt">
+                        <p>SABORES</p>
+                        <p><b>INCRÍVEIS</b></p>
+                        <p>E IMPEDÍVEIS</p>
+                    </div>
+                    <div class="slider_btn">
+                        <div class="btn center">
+                            CONFIRA
+                        </div>
+                    </div>
+                    <img src="img/slider/slider5.jpg" alt="slider">
+                </li>
+            </ul>
+        </div>
+        <div id="progress">
+            <div id="right_arrow">
+                <img src="img/icons/arrow_right.png" alt="Seta direita">
+            </div>
+            <div id="left_arrow">
+                <img src="img/icons/arrow_left.png" alt="Seta esquerda">
+            </div>
+            <div id="progress_bar" class="center">
+                <ul>
+                    <li class="progress active">
+                        <img id="progress1" src="img/icons/progressbaractive.png" alt="progress">
+                    </li>
+                    <li class="progress">
+                        <img id="progress2" src="img/icons/progressbar.png" alt="progress">
+                    </li>
+                    <li class="progress">
+                        <img id="progress3" src="img/icons/progressbar.png" alt="progress">
+                    </li>
+                    <li class="progress">
+                        <img id="progress4" src="img/icons/progressbar.png" alt="progress">
+                    </li>
+                    <li class="progress">
+                        <img id="progress5" src="img/icons/progressbar.png" alt="progress">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="brand">
+            <div id="brand_holder" class="center">
+                <div class="brand_box">
+                    <img src="img/cocacola.png" alt="background">
+                    <div class="brand_img center">
+                        <img src="img/icons/cocacola.png" alt="coca cola">
+                    </div>
+                    <div class="brand_txt center">
+                        <b>ENTREGA EM ATÉ</b>
+                        <p>24 HORAS</p>
+                    </div>
+                    <div class="brand_btn center">
+                        SAIBA MAIS
+                    </div>
+                </div>
+                <div class="brand_box">
+                    <img src="img/wewi.png" alt="background">
+                    <div class="brand_img center">
+                        <img src="img/icons/wewi.png" alt="wewi">
+                    </div>
+                    <div class="brand_txt center">
+                        <p>REFRIGERANTE</p>
+                        <p><b>ORGÂNICO</b></p>
+                        <p><b>& NATURAL</b></p>
+                    </div>
+                    <div class="brand_btn center">
+                        CONFIRA
+                    </div>
+                </div>
+                <div class="brand_box">
+                    <img src="img/pickngreen.png" alt="background">
+                    <div class="brand_img center">
+                        <img src="img/icons/pickn_green.png" alt="wewi">
+                    </div>
+                    <div class="brand_txt center">
+                        <p><b>PRODUTOS</b></p>
+                        <p><b>ORGÂNICOS</b></p>
+                    </div>
+                    <div class="brand_btn center">
+                        CONFIRA
+                    </div>
+                </div>
+                <div class="brand_box">
+                    <img src="img/ricaelialimentos.png" alt="background">
+                    <div class="brand_img center">
+                        <img src="img/icons/ricaelialimentos.png" alt="wewi">
+                    </div>
+                    <div class="brand_txt center">
+                        <p>AS MELHORES</p>
+                        <p>SOBREMESAS</p>
+                    </div>
+                    <div class="brand_btn center">
+                        CONFIRA
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="mais_vendidos">
+            <div id="right_arrow_mv">
+                <img src="img/icons/arrow_right2.png" alt="Seta direita">
+            </div>
+            <div id="left_arrow_mv">
+                <img src="img/icons/arrow_left2.png" alt="Seta esquerda">
+            </div>
+            <div id="mais_vendidos_holder" class="center">
+                <h1>MAIS VENDIDOS</h1>
+                <div id="menu_mv">
+                    <ul>
+                        <li>
+                            BEBIDAS
+                        </li>
+                        <li>
+                            ACHOCOLATADOS
+                        </li>
+                        <li>
+                            SOBREMESAS
+                        </li>
+                        <li>
+                            CONSERVAS
+                        </li>
+                    </ul>
+                </div>
+                <div id="slider_mv">
+                    <ul id="item_holder_mv">
+                        <li>
+                            <div class="item_mv">
+                                <div class="item_img_mv center">
+                                    <div class="add_cart">
+                                        <img src="img/icons/add.png" alt="add">
+                                    </div>
+                                    <img src="img/ovomaltine.jpg" alt="ovomaltine">
+                                </div>
+                                <div class="nome_mv center">
+                                    Ovomaltine Creme Crocante 660g
+                                </div>
+                                <div class="preco_antigo_mv center">
+                                    R$ 147,39
+                                </div>
+                                <div class="preco_mv center">
+                                    R$ 99,00
+                                </div>
+                                <div class="botoes_mv center">
+                                    <div class="quantidade_mv">
+                                        <div class="menos">
+                                            -
+                                        </div>
+                                        <div class="quantidade">
+                                            <input type="number" value="1" min="1" max="100" disabled>
+                                        </div>
+                                        <div class="mais">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div class="comprar_mv">
+                                        COMPRAR
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_mv">
+                                <div class="item_img_mv center">
+                                    <div class="add_cart">
+                                        <img src="img/icons/add.png" alt="add">
+                                    </div>
+                                    <img src="img/ovomaltine.jpg" alt="ovomaltine">
+                                </div>
+                                <div class="nome_mv center">
+                                    Ovomaltine Creme Crocante 660g
+                                </div>
+                                <div class="preco_antigo_mv center">
+                                    R$ 147,39
+                                </div>
+                                <div class="preco_mv center">
+                                    R$ 99,00
+                                </div>
+                                <div class="botoes_mv center">
+                                    <div class="quantidade_mv">
+                                        <div class="menos">
+                                            -
+                                        </div>
+                                        <div class="quantidade">
+                                            <input type="number" value="1" min="1" max="100" disabled>
+                                        </div>
+                                        <div class="mais">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div class="comprar_mv">
+                                        COMPRAR
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_mv">
+                                <div class="item_img_mv center">
+                                    <div class="add_cart">
+                                        <img src="img/icons/add.png" alt="add">
+                                    </div>
+                                    <img src="img/ovomaltine.jpg" alt="ovomaltine">
+                                </div>
+                                <div class="nome_mv center">
+                                    Ovomaltine Creme Crocante 660g
+                                </div>
+                                <div class="preco_antigo_mv center">
+                                    R$ 147,39
+                                </div>
+                                <div class="preco_mv center">
+                                    R$ 99,00
+                                </div>
+                                <div class="botoes_mv center">
+                                    <div class="quantidade_mv">
+                                        <div class="menos">
+                                            -
+                                        </div>
+                                        <div class="quantidade">
+                                            <input type="number" value="1" min="1" max="100" disabled>
+                                        </div>
+                                        <div class="mais">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div class="comprar_mv">
+                                        COMPRAR
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_mv">
+                                <div class="item_img_mv center">
+                                    <div class="add_cart">
+                                        <img src="img/icons/add.png" alt="add">
+                                    </div>
+                                    <img src="img/ovomaltine.jpg" alt="ovomaltine">
+                                </div>
+                                <div class="nome_mv center">
+                                    Ovomaltine Creme Crocante 660g
+                                </div>
+                                <div class="preco_antigo_mv center">
+                                    R$ 147,39
+                                </div>
+                                <div class="preco_mv center">
+                                    R$ 99,00
+                                </div>
+                                <div class="botoes_mv center">
+                                    <div class="quantidade_mv">
+                                        <div class="menos">
+                                            -
+                                        </div>
+                                        <div class="quantidade">
+                                            <input type="number" value="1" min="1" max="100" disabled>
+                                        </div>
+                                        <div class="mais">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div class="comprar_mv">
+                                        COMPRAR
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_mv">
+                                <div class="item_img_mv center">
+                                    <div class="add_cart">
+                                        <img src="img/icons/add.png" alt="add">
+                                    </div>
+                                    <img src="img/ovomaltine.jpg" alt="ovomaltine">
+                                </div>
+                                <div class="nome_mv center">
+                                    Ovomaltine Creme Crocante 660g
+                                </div>
+                                <div class="preco_antigo_mv center">
+                                    R$ 147,39
+                                </div>
+                                <div class="preco_mv center">
+                                    R$ 99,00
+                                </div>
+                                <div class="botoes_mv center">
+                                    <div class="quantidade_mv">
+                                        <div class="menos">
+                                            -
+                                        </div>
+                                        <div class="quantidade">
+                                            <input type="number" value="1" min="1" max="100" disabled>
+                                        </div>
+                                        <div class="mais">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div class="comprar_mv">
+                                        COMPRAR
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_mv">
+                                <div class="item_img_mv center">
+                                    <div class="add_cart">
+                                        <img src="img/icons/add.png" alt="add">
+                                    </div>
+                                    <img src="img/ovomaltine.jpg" alt="ovomaltine">
+                                </div>
+                                <div class="nome_mv center">
+                                    Ovomaltine Creme Crocante 660g
+                                </div>
+                                <div class="preco_antigo_mv center">
+                                    R$ 147,39
+                                </div>
+                                <div class="preco_mv center">
+                                    R$ 99,00
+                                </div>
+                                <div class="botoes_mv center">
+                                    <div class="quantidade_mv">
+                                        <div class="menos">
+                                            -
+                                        </div>
+                                        <div class="quantidade">
+                                            <input type="number" value="1" min="1" max="100" disabled>
+                                        </div>
+                                        <div class="mais">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div class="comprar_mv">
+                                        COMPRAR
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div id="banner">
+            <div id="banner_holder" class="center">
+                <div class="banner_img">
+                    <img src="img/shopping.png" alt="banner">
+                    <div class="banner_txt center">
+                        <p><b>OFERTAS</b></p>
+                        <p>EXCLUSIVAS</p>
+                    </div>
+                    <div class="banner_btn center">
+                        VEJA MAIS
+                    </div>
+                </div>
+                <div class="banner_img">
+                    <img src="img/shopping2.png" alt="banner">
+                    <div class="banner_txt center">
+                            <p><b>POLPAS</b></p>
+                            <p>DE FRUTAS</p>
+                        </div>
+                        <div class="banner_btn center">
+                            VEJA MAIS
+                        </div>
+                </div>
+            </div>  
+        </div>
+        <section id="lancamentos">
+            <div id="right_arrow_lc">
+                <img src="img/icons/arrow_right2.png" alt="Seta direita">
+            </div>
+            <div id="left_arrow_lc">
+                <img src="img/icons/arrow_left2.png" alt="Seta esquerda">
+            </div>
+            <div id="lancamentos_holder" class="center">
+                <h1>LANÇAMENTOS</h1>
+                <div id="menu_lc">
+                    <ul>
+                        <li>
+                            BEBIDAS
+                        </li>
+                        <li>
+                            ACHOCOLATADOS
+                        </li>
+                        <li>
+                            SOBREMESAS
+                        </li>
+                        <li>
+                            CONSERVAS
+                        </li>
+                    </ul>
+                </div>
+                <div id="slider_lc"> 
+                    <ul id="item_holder_lc">
+                        <li>
+                            <div class="item_lc">
+                                <div class="item_img_lc center">
+                                    <div class="add_cart">
+                                        <img src="img/icons/add.png" alt="add">
+                                    </div>
+                                    <img src="img/ovomaltine.jpg" alt="ovomaltine">
+                                </div>
+                                <div class="nome_lc center">
+                                    Ovomaltine Creme Crocante 660g
+                                </div>
+                                <div class="preco_antigo_lc center">
+                                    R$ 147,39
+                                </div>
+                                <div class="preco_lc center">
+                                    R$ 99,00
+                                </div>
+                                <div class="botoes_lc center">
+                                    <div class="quantidade_lc">
+                                        <div class="menos">
+                                            -
+                                        </div>
+                                        <div class="quantidade">
+                                            <input type="number" value="1" min="1" max="100" disabled>
+                                        </div>
+                                        <div class="mais">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div class="comprar_lc">
+                                        COMPRAR
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_lc">
+                                <div class="item_img_lc center">
+                                    <div class="add_cart">
+                                        <img src="img/icons/add.png" alt="add">
+                                    </div>
+                                    <img src="img/ovomaltine.jpg" alt="ovomaltine">
+                                </div>
+                                <div class="nome_lc center">
+                                    Ovomaltine Creme Crocante 660g
+                                </div>
+                                <div class="preco_antigo_lc center">
+                                    R$ 147,39
+                                </div>
+                                <div class="preco_lc center">
+                                    R$ 99,00
+                                </div>
+                                <div class="botoes_lc center">
+                                    <div class="quantidade_lc">
+                                        <div class="menos">
+                                            -
+                                        </div>
+                                        <div class="quantidade">
+                                            <input type="number" value="1" min="1" max="100" disabled>
+                                        </div>
+                                        <div class="mais">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div class="comprar_lc">
+                                        COMPRAR
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_lc">
+                                <div class="item_img_lc center">
+                                    <div class="add_cart">
+                                        <img src="img/icons/add.png" alt="add">
+                                    </div>
+                                    <img src="img/ovomaltine.jpg" alt="ovomaltine">
+                                </div>
+                                <div class="nome_lc center">
+                                    Ovomaltine Creme Crocante 660g
+                                </div>
+                                <div class="preco_antigo_lc center">
+                                    R$ 147,39
+                                </div>
+                                <div class="preco_lc center">
+                                    R$ 99,00
+                                </div>
+                                <div class="botoes_lc center">
+                                    <div class="quantidade_lc">
+                                        <div class="menos">
+                                            -
+                                        </div>
+                                        <div class="quantidade">
+                                            <input type="number" value="1" min="1" max="100" disabled>
+                                        </div>
+                                        <div class="mais">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div class="comprar_lc">
+                                        COMPRAR
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_lc">
+                                    <div class="item_img_lc center">
+                                        <div class="add_cart">
+                                            <img src="img/icons/add.png" alt="add">
+                                        </div>
+                                        <img src="img/ovomaltine.jpg" alt="ovomaltine">
+                                    </div>
+                                    <div class="nome_lc center">
+                                        Ovomaltine Creme Crocante 660g
+                                    </div>
+                                    <div class="preco_antigo_lc center">
+                                        R$ 147,39
+                                    </div>
+                                    <div class="preco_lc center">
+                                        R$ 99,00
+                                    </div>
+                                    <div class="botoes_lc center">
+                                        <div class="quantidade_lc">
+                                            <div class="menos">
+                                                -
+                                            </div>
+                                            <div class="quantidade">
+                                                <input type="number" value="1" min="1" max="100" disabled>
+                                            </div>
+                                            <div class="mais">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div class="comprar_lc">
+                                            COMPRAR
+                                        </div>
+                                    </div>
+                                </div>
+                        </li>
+                        <li>
+                            <div class="item_lc">
+                                <div class="item_img_lc center">
+                                    <div class="add_cart">
+                                        <img src="img/icons/add.png" alt="add">
+                                    </div>
+                                    <img src="img/ovomaltine.jpg" alt="ovomaltine">
+                                </div>
+                                <div class="nome_lc center">
+                                    Ovomaltine Creme Crocante 660g
+                                </div>
+                                <div class="preco_antigo_lc center">
+                                    R$ 147,39
+                                </div>
+                                <div class="preco_lc center">
+                                    R$ 99,00
+                                </div>
+                                <div class="botoes_lc center">
+                                    <div class="quantidade_lc">
+                                        <div class="menos">
+                                            -
+                                        </div>
+                                        <div class="quantidade">
+                                            <input type="number" value="1" min="1" max="100" disabled>
+                                        </div>
+                                        <div class="mais">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div class="comprar_lc">
+                                        COMPRAR
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item_lc">
+                                <div class="item_img_lc center">
+                                    <div class="add_cart">
+                                        <img src="img/icons/add.png" alt="add">
+                                    </div>
+                                    <img src="img/ovomaltine.jpg" alt="ovomaltine">
+                                </div>
+                                <div class="nome_lc center">
+                                    Ovomaltine Creme Crocante 660g
+                                </div>
+                                <div class="preco_antigo_lc center">
+                                    R$ 147,39
+                                </div>
+                                <div class="preco_lc center">
+                                    R$ 99,00
+                                </div>
+                                <div class="botoes_lc center">
+                                    <div class="quantidade_lc">
+                                        <div class="menos">
+                                            -
+                                        </div>
+                                        <div class="quantidade">
+                                            <input type="number" value="1" min="1" max="100" disabled>
+                                        </div>
+                                        <div class="mais">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div class="comprar_lc">
+                                        COMPRAR
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="rede_social">
+            <h1>NOS SIGA NO INSTAGRAM</h1>
+            <h3>@CENTRALFOODSSP</h3>
+            <div id="rede_social_img_holder" class="center">
+                <div class="rede_social_img">
+                    <img src="img/redesocial1.png" alt="Imagem Rede Social">
+                </div>
+                <div class="rede_social_img">
+                    <img src="img/redesocial2.png" alt="Imagem Rede Social">
+                </div>
+                <div class="rede_social_img">
+                    <img src="img/redesocial3.png" alt="Imagem Rede Social">
+                </div>
+                <div class="rede_social_img">
+                    <img src="img/redesocial4.png" alt="Imagem Rede Social">
+                </div>
+                <div class="rede_social_img">
+                    <img src="img/redesocial5.png" alt="Imagem Rede Social">
+                </div>
+                <div class="rede_social_img">
+                    <img src="img/redesocial6.png" alt="Imagem Rede Social">
+                </div>
+            </div>
+        </section>
+        <section id="sobre">
+            <h1>SOBRE A CENTRAL FOODS</h1>
+            <div id="sobre_txt" class="center">
+                    <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    </p>
+            </div>
+        </section>
+        <footer>
+            <div id="footer_holder" class="center">
+                <div class="footer_info">
+                    <div class="footer_title">
+                        CONHEÇA A CENTRAL FOODS
+                    </div>
+                    <div class="footer_itens">
+                        CONHEÇA A CENTRAL FOODS
+                    </div>
+                    <div class="footer_itens">
+                        COMO COMPRAR
+                    </div>
+                    <div class="footer_itens">
+                        INDICAÇÃO E DESCONTO
+                    </div>
+                    <div class="footer_itens">
+                        BLOG CENTRAL FOODS
+                    </div>
+                    <div id="rede_sociais_footer">
+                        <div class="rede_sociais_footer_img">
+                            <img src="img/icons/instagram.png" alt="instagram">
+                        </div>
+                        <div class="rede_sociais_footer_img">
+                            <img src="img/icons/linkedin.png" alt="linkedin">
+                        </div>
+                        <div class="rede_sociais_footer_img">
+                            <img src="img/icons/facebook.png" alt="facebook">
+                        </div>
+                        <div class="rede_sociais_footer_img">
+                            <img src="img/icons/youtube.png" alt="youtube">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_info">
+                    <div class="footer_title">
+                        INFORMAÇÕES ÚTEIS
+                    </div>
+                    <div class="footer_itens">
+                        FALE CONOSCO
+                    </div>
+                    <div class="footer_itens">
+                        DÚVIDAS
+                    </div>
+                    <div class="footer_itens">
+                        PRAZOS DE ENTREGA
+                    </div>
+                    <div class="footer_itens">
+                        FORMAS DE PAGAMENTO
+                    </div>
+                    <div class="footer_itens">
+                        POLÍTICA DE PRIVACIDADE
+                    </div>
+                    <div class="footer_itens">
+                        TROCAS E DEVOLUÇÕES
+                    </div>
+                </div>
+                <div class="footer_info">
+                    <div class="footer_title">
+                        FORMAS DE PAGAMENTO
+                    </div>
+                    <div id="footer_bandeiras_holder">
+                        <div class="footer_bandeiras_img">
+                            <img src="img/icons/visa.png" alt="visa">
+                        </div>
+                        <div class="footer_bandeiras_img">
+                            <img src="img/icons/mastercard.png" alt="master card">
+                        </div>
+                        <div class="footer_bandeiras_img">
+                            <img src="img/icons/elo.png" alt="elo">
+                        </div>
+                        <div class="footer_bandeiras_img">
+                            <img src="img/icons/dinersclub.png" alt="dinners club">
+                        </div>
+                        <div class="footer_bandeiras_img">
+                            <img src="img/icons/boleto.png" alt="boleto">
+                        </div>
+                        <div class="footer_bandeiras_img">
+                            <img src="img/icons/americanexpress.png" alt="american express">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_info">
+                    <div id="footer_cadastro">
+                        <div id="info_cadastro" class="center">
+                            <p>CADASTRE-SE E RECEBA NOSSAS</p>
+                            <p><b>NOVIDADES DE PROMOÇÕES</b></p>
+                            <p>Excepteur sint occaecat cudatat non ent, sunt in culpa qui officia lorem ipsum</p>
+                        </div>
+                        <div id="cadastro_form" class="center" >
+                            <div id="cadastro_txt">
+                                <input type="text" placeholder="SEU E-MAIL">
+                            </div>
+                            <div id="cadastro_btn">
+                                OK
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer_copyright">
+                <div id="footer_copyright_holder" class="center">
+                    <div id="copyright_text">
+                        <p>
+                            Copyright © 2019. Todos os direitos reservados. Todas as marcas e suas imagens são de propriedade de seus respectivos donos.  
+                        </p>
+                        <p>
+                            É vedada a reprodução, total ou parcial, de qualquer conteúdo sem expressa autorização.
+                        </p>
+                    </div>
+                    <div id="footer_copyright_logos">
+                        <div class="copyright_img">
+                            <img src="img/icons/vtex.png" alt="vtex">
+                        </div>
+                        <div class="copyright_img">
+                            <img src="img/icons/econverse.png" alt="econverse">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/slider.js"></script>
+    </body>
+</html>
